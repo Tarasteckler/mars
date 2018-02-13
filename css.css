@@ -1,0 +1,55 @@
+body, select, input, h2{
+    font-family: arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(yellow, orange, red);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+#options, #buttons{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#nasa{
+    height: 130px;
+}
+
+h1{
+    font-family: impact, sans-serif;
+    font-size: 75px;
+    color: white;
+    background: url(img/download.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.opt{
+    text-decoration: underline;
+}
+
+
+#search, #restart{
+    height: 30px;
+    border-radius: 4px;
+    background-color: darkred;
+    color: white;
+    font-family: arial, sans-serif;
+}
+
+#search:hover, #restart:hover{
+    background-color: orangered;
+    transition-duration: 0.4s;
+}
+
+select, #sol{
+    height: 30px;
+}

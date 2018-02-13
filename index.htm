@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Exploration</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+<h1><img src="img/nasa.png" id="nasa">Mars Exploration</h1>
+
+<div id="text"><h2 id="set">View pictures taken by Mars rovers below! <br> <br> Set your parameters based on rover, sol (Martian day), and camera.</h2></div>
+
+<table id="options" cellspacing="20px" cellpadding="15px" >
+    <tr>
+        <td>
+            <h2 class="opt">Rover</h2>
+            <select id="rovers">
+                <option value="curiosity">Curiosity</option>
+                <option value="opportunity">Opportunity</option>
+                <option value="spirit">Spirit</option>
+            </select>
+        </td>
+        <td> <h2 class="opt">Sol</h2>
+            <input id="sol" type="text" placeholder="500, 1000, 2300...">
+        </td>
+        <td>
+            <h2 class="opt">Camera</h2>
+            <select id="cameras" >
+                <option value="fhaz">FHAZ</option>
+                <option value="rhaz">RHAZ</option>
+                <option value="mast">MAST</option>
+                <option value="chemcam">CHEMCAM</option>
+                <option value="mahli">MAHLI</option>
+                <option value="mardi">MARDI</option>
+                <option value="navcam">NAVCAM</option>
+                <option value="pancam">PANCAM</option>
+                <option value="minites">MINITES</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table id="buttons" cellspacing="10px" cellpadding="5px">
+    <tr>
+        <td><button id="search">Get pictures</button></td>
+        <td><button id="restart">Start fresh</button><br></td>
+    </tr>
+</table>
+
+
+
+<div id="pic"></div>
+
+
+</body>
+</html>
